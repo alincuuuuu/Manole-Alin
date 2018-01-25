@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+char a[100];
+int main()
+{
+char* b;
+cout<<"Introduceti text : ";
+cin.get(a , 100);
+b=strtok(a , " ");
+while(b!=NULL)
+{
+cout << b << " ";
+b=strtok(NULL , " ");
+}
+return 0;
+}
